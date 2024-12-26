@@ -7,6 +7,7 @@ def tower_of_hanoi_recursive(n, source, destination, auxiliary):
     tower_of_hanoi_recursive(n - 1, auxiliary, destination, source)
 
 n = int(input("Jumlah n (minimal 3) : "))
+if n < 3 : n = 3
 start_time = time.time()
 tower_of_hanoi_recursive(n, "A", "C", "B")
 end_time = time.time()
