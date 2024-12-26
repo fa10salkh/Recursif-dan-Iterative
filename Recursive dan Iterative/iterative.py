@@ -27,38 +27,3 @@ tower_of_hanoi_iterative(n, "A", "C", "B")
 end_time = time.time()
 
 print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 21
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 22
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 23
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 24
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 25
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
