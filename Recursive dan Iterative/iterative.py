@@ -21,7 +21,7 @@ def move_disk(from_rod, to_rod, rods):
     else:
         rods[from_rod].append(rods[to_rod].pop())
 
-n = 20
+n = int(input("Jumlah n (minimal 3) : "))
 start_time = time.time()
 tower_of_hanoi_iterative(n, "A", "C", "B")
 end_time = time.time()
