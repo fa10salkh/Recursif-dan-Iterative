@@ -21,42 +21,8 @@ def move_disk(from_rod, to_rod, rods):
     else:
         rods[from_rod].append(rods[to_rod].pop())
 
-n = 20
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 21
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 22
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 23
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 24
-start_time = time.time()
-tower_of_hanoi_iterative(n, "A", "C", "B")
-end_time = time.time()
-
-print(f"Iterative solution took {end_time - start_time:.6f} seconds for {n} disks.")
-
-n = 25
+n = int(input("Jumlah n (minimal 3) : "))
+if n < 3 : n = 3
 start_time = time.time()
 tower_of_hanoi_iterative(n, "A", "C", "B")
 end_time = time.time()
