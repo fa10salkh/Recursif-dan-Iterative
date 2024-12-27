@@ -17,9 +17,13 @@ def tower_of_hanoi_iterative(n, source, destination, auxiliary):
 
 def move_disk(from_rod, to_rod, rods):
     if rods[from_rod] and (not rods[to_rod] or rods[from_rod][-1] < rods[to_rod][-1]):
-        rods[to_rod].append(rods[from_rod].pop())
+        disk = rods[from_rod].pop()
+        rods[to_rod].append(disk)
+        print(f"Move disk {disk} from {from_rod} to {to_rod}")
     else:
-        rods[from_rod].append(rods[to_rod].pop())
+        disk = rods[to_rod].pop()
+        rods[from_rod].append(disk)
+        print(f"Move disk {disk} from {to_rod} to {from_rod}")
 
 n = int(input("Jumlah n (minimal 3) : "))
 if n < 3 : n = 3
